@@ -8,7 +8,7 @@
 # Introduction
 - The idea of the project is to create a hardware computerized chess game which can be played without any screen and reduces our screen time.
 - Chess is a game of intelligence and strategy, but playing it always on screen makes it boring.
-- The object of this project is to maintain the same thrill of offline chess with the advantage of a computer player.
+- The objective  of this project is to maintain the same thrill of offline chess with the advantage of a computer player.
 
 # Methodology
 - 
