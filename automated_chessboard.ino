@@ -1,5 +1,5 @@
 //___________________________________________________________________________________________________
-// Declaring required constants ans Pin numbers
+// Declaring required constants and Pin numbers
 //---------------------------------------------------------------------------------------------------
 const int stepsBetweenSquares = 150;
 const int stepPinX = 5; 
