@@ -14,6 +14,8 @@
 - All the chess pieces were magnetized and a electromagnet is used to move the pieces. The electromagnet is placed on a XY trolley which uses two stepper motors, one for X direction and other for Y direction.
 ![20220415_183719_mfnr 1](https://user-images.githubusercontent.com/90093681/177321888-e152768e-4c89-42ea-b307-b357a2c30bd2.jpg)
 - The magnet motorization is based on core XY concept. Two motors along with belts are used to move following the X and Y axes. The main advantage of the Core XY concept compared to cartesian kinematics is to avoid having a motoron board the trolley beam. Thus the horizoontal beam is more compact and allow to have a bigger working envelope.
+- The trolley is assembled on the XY table. It is equipped with an electromagnet. The electromagnet can generate a magnetic field which creates the link between the trolley and the chess pieces. So, when the trolley moves the chess pieces follow it.
+- The Arduino cannot directly power the electromagnet with its output pins because they cannot deliver enough power. So, the electromagnet must be connected to an independent electric current. The advantage of the power transistor is that a low amperage is enough to control it, so it can be piloted by the Arduino.
 
 # Materials list
 - Rod system(preferring this)
