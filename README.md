@@ -16,6 +16,10 @@
 - The magnet motorization is based on core XY concept. Two motors along with belts are used to move following the X and Y axes. The main advantage of the Core XY concept compared to cartesian kinematics is to avoid having a motoron board the trolley beam. Thus the horizoontal beam is more compact and allow to have a bigger working envelope.
 - The trolley is assembled on the XY table. It is equipped with an electromagnet. The electromagnet can generate a magnetic field which creates the link between the trolley and the chess pieces. So, when the trolley moves the chess pieces follow it.
 - The Arduino cannot directly power the electromagnet with its output pins because they cannot deliver enough power. So, the electromagnet must be connected to an independent electric current. The advantage of the power transistor is that a low amperage is enough to control it, so it can be piloted by the Arduino.
+- **Localization of chess pieces** : Magnetic sensors are placed below each chess piece square. So, when the magnet of the chess piece is above the sensor, the sensor will be activated. By comparing the activated sensors before and after the move, the chess piece displacement can be determined.
+- The magnetic sensor or Reed switch is composed of a hermetic glass envelope with two flexible metal contacts inside. The contact is normally open when there is no magnetic field and close if a magnetic field is present. Multiplexers are used to connect the 64 sensors to arduino.
+![20220417_091514](https://user-images.githubusercontent.com/90093681/179518228-a9dd4117-88eb-42df-b426-e506d23a51d8.jpg)
+- **Special Moves** : To avoid any contact between the chess pieces, the displacement path imposes to move between two squares and not to the middle. Same for the capturing, a captured piece is pushed out of the chessboard first.
 
 # Materials list
 - Rod system(preferring this)
@@ -52,3 +56,6 @@
 	- 4 x HE10 Connectors
 	- 8 x Ribbon Cable - 8
 	- Bluetooth module HC-05
+
+# Conclusion
+- Playing the chess in offline is a real thrill, adding a computer opponent. The AI opponent is capable of moving on its own giving the benifits of both online and offline chess games.
